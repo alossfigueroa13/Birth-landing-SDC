@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="es-MX">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Birth | Sistema de Consecuencias</title>
+    <meta name="description" content="Landing interna para entender niveles de consecuencia, recuperación de confianza y acciones concretas por área.">
+    <link rel="preload" as="image" href="assets/birth-logo-black.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="js/data.js"></script>
+    <script defer src="js/main.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="container nav" aria-label="Navegación principal">
+        <a class="brand" href="#inicio" aria-label="Ir al inicio">
+          <img src="assets/birth-logo-black.png" alt="Birth">
+        </a>
+        <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#como-funciona">Cómo funciona</a></li>
+          <li><a href="#semaforo">Semáforo</a></li>
+          <li><a href="#reglamento-general">Reglamento</a></li>
+          <li><a href="#areas">Áreas</a></li>
+          <li><a href="#casos">Casos</a></li>
+          <li><a href="#recuperacion">Recuperación</a></li>
+          <li><a href="#lideres">Líderes</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section-dark" id="inicio">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Birth system</p>
+            <h1>Equivocarse puede pasar. Hacerse responsable hace la diferencia.</h1>
+            <p class="lead">El semáforo no define a la persona. Define una situación específica que puede corregirse con responsabilidad, evidencia y constancia.</p>
+            <div class="hero-actions">
+              <a class="button button-light" href="#semaforo">Explorar sistema</a>
+              <a class="button button-ghost" href="#casos">Ver casos prácticos</a>
+            </div>
+          </div>
+          <aside class="hero-card" aria-label="Vista editorial del semáforo de niveles">
+            <div class="hero-card-head">
+              <span>Semáforo v2.0</span>
+              <strong>B!</strong>
+            </div>
+            <div class="mini-levels" id="heroMiniLevels"></div>
+            <div class="formula">
+              <span>Fórmula base</span>
+              <strong>Reconozco + reparo + aprendo + demuestro mejora = recupero confianza.</strong>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section" id="como-funciona">
+        <div class="container">
+          <div class="section-heading split">
+            <div>
+              <p class="eyebrow pink">Cómo funciona</p>
+              <h2>Este sistema no busca señalar. Busca ordenar, reparar y aprender.</h2>
+            </div>
+            <p>La conversación cambia cuando el foco deja de ser la culpa y se mueve hacia la responsabilidad. Cada nivel existe para leer el impacto, decidir la acción correcta y abrir una ruta clara de recuperación.</p>
+          </div>
+          <div class="principle-grid" id="principleGrid"></div>
+        </div>
+      </section>
+
+      <section class="section section-white" id="semaforo">
+        <div class="container">
+          <div class="section-heading center">
+            <p class="eyebrow pink">Semáforo</p>
+            <h2>Cuatro niveles para leer impacto, no identidad.</h2>
+            <p>Cada nivel combina nombre, color, tiempo de recuperación y acción concreta. Así nadie depende solo del color para entender qué hacer.</p>
+          </div>
+          <div class="traffic-grid">
+            <div class="level-tabs" id="levelTabs" role="tablist" aria-label="Niveles del semáforo"></div>
+            <article class="level-panel card" id="levelPanel" role="tabpanel"></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-soft" id="reglamento-general">
+        <div class="container">
+          <div class="rule-hero">
+            <div class="rule-intro">
+              <p class="eyebrow pink" id="generalEyebrow"></p>
+              <h2 id="generalTitle"></h2>
+              <p class="lead" id="generalSubtitle"></p>
+              <p id="generalBody"></p>
+            </div>
+            <div class="general-principles" id="generalPrinciples"></div>
+          </div>
+
+          <div class="section-heading center narrow">
+            <p class="eyebrow orange">Niveles generales</p>
+            <h2>Reglas claras para cuidar cómo trabajamos.</h2>
+          </div>
+          <div class="general-levels" id="generalLevels"></div>
+
+          <div class="section-heading split top-gap">
+            <div>
+              <p class="eyebrow pink">Convivencia y procesos</p>
+              <h2>Acuerdos generales que sostienen el flow.</h2>
+            </div>
+            <p>Estas categorías aplican a toda la agencia: oficina, asistencia, procesos, respeto, información, herramientas, seguridad y trabajo remoto.</p>
+          </div>
+          <div class="category-grid" id="categoryGrid"></div>
+
+          <div class="escalation card" id="escalamiento">
+            <p class="eyebrow orange">Cómo escala una consecuencia</p>
+            <h3 id="escalationTitle"></h3>
+            <p id="escalationBody"></p>
+            <div class="escalation-cols">
+              <div>
+                <h4 id="actaTitle"></h4>
+                <p id="actaCopy"></p>
+              </div>
+              <div>
+                <h4 id="belongingTitle"></h4>
+                <p id="belongingCopy"></p>
+              </div>
+              <div>
+                <h4 id="rescissionTitle"></h4>
+                <p id="rescissionCopy"></p>
+              </div>
+            </div>
+            <p class="note" id="legalNote"></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-white" id="areas">
+        <div class="container">
+          <div class="section-heading center">
+            <p class="eyebrow pink">Áreas</p>
+            <h2>Cada área tiene riesgos distintos y evidencia distinta.</h2>
+            <p>Selecciona un área para ver situaciones comunes, preguntas para líderes, evidencia y señales de recuperación.</p>
+          </div>
+          <div class="area-layout">
+            <div class="area-tabs" id="areaTabs"></div>
+            <article class="area-detail card" id="areaDetail"></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-soft" id="casos">
+        <div class="container">
+          <div class="section-heading center">
+            <p class="eyebrow orange">Casos prácticos</p>
+            <h2>Cosas que sí pasan en agencia, sin drama y con claridad.</h2>
+            <p>Filtra por área, categoría o nivel para encontrar ejemplos concretos y posibles respuestas.</p>
+          </div>
+          <div class="filters">
+            <label>
+              Buscar
+              <input id="caseSearch" type="search" placeholder="Ej. brief, confidencialidad, COR, pauta">
+            </label>
+            <label>
+              Área o categoría
+              <select id="caseAreaFilter"></select>
+            </label>
+            <label>
+              Nivel
+              <select id="caseLevelFilter"></select>
+            </label>
+          </div>
+          <p class="result-count" id="caseResultCount"></p>
+          <div class="case-grid" id="caseGrid"></div>
+        </div>
+      </section>
+
+      <section class="section section-white" id="recuperacion">
+        <div class="container">
+          <div class="section-heading center">
+            <p class="eyebrow pink">Ruta de recuperación</p>
+            <h2>La confianza vuelve con evidencia, no con promesas.</h2>
+            <p>La fórmula base convierte cualquier error recuperable en una ruta de acción: reconocer, reparar, aprender y demostrar mejora sostenida.</p>
+          </div>
+          <div class="timeline" id="recoveryTimeline"></div>
+        </div>
+      </section>
+
+      <section class="section section-dark" id="lideres">
+        <div class="container">
+          <div class="section-heading center light">
+            <p class="eyebrow pink">Guía para líderes</p>
+            <h2>Antes de aplicar una consecuencia, lee el contexto completo.</h2>
+            <p>Un buen criterio combina impacto, frecuencia, intención, evidencia y capacidad real de reparación.</p>
+          </div>
+          <div class="leader-grid">
+            <article class="leader-card">
+              <h3>Criterios base</h3>
+              <ul id="leaderCriteria"></ul>
+            </article>
+            <article class="leader-card">
+              <h3>Preguntas de diagnóstico</h3>
+              <ul id="diagnosticQuestions"></ul>
+            </article>
+          </div>
+          <div class="matrix card dark-card">
+            <h3 id="matrixTitle"></h3>
+            <p id="matrixDescription"></p>
+            <div class="matrix-grid" id="matrixGrid"></div>
+          </div>
+          <div class="templates" id="communicationTemplates"></div>
+        </div>
+      </section>
+
+      <section class="closing">
+        <div class="container closing-card">
+          <p class="eyebrow">Cierre cultural</p>
+          <h2>La diferencia está en cómo respondes después del error.</h2>
+          <p>No normalizamos el retrabajo repetido. Sí normalizamos reconocer, reparar, aprender y demostrar mejora.</p>
+          <a class="button button-light" href="#inicio">Volver arriba</a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
